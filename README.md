@@ -49,3 +49,15 @@ WHERE fare_amount > 0 AND trip_distance > 0
 GROUP BY day_of_week, hour_of_day
 ORDER BY total_trips DESC;
 ```
+
+
+## ⚡ Big Data Processing with Apache Spark
+
+To scale the architecture for massive volumes of production transit data (millions of daily trip entries), the pipeline can be transitioned from traditional query engines to distributed cluster computing using **Apache Spark (PySpark)**.
+
+The framework processes the data pipeline via:
+* **Distributed Filters**: Eliminating negative fares and passenger outliers rapidly across worker nodes.
+* **Lazy Evaluation optimization**: Chaining the cleaning sequences together before executing actions to lower runtime memory usage.
+* **Aggregated Grouping**: Running cluster-wide group operations across trip timestamps to export low-latency analytics files.
+
+The core distributed architecture script is available in the root directory under `spark_process.py`.
