@@ -61,3 +61,17 @@ The framework processes the data pipeline via:
 * **Aggregated Grouping**: Running cluster-wide group operations across trip timestamps to export low-latency analytics files.
 
 The core distributed architecture script is available in the root directory under `spark_process.py`.
+
+
+
+## 🚀 Live Application & Production Monitoring
+
+### 💻 Interactive Dashboard
+The frontend user interface and analytics dashboard are actively deployed and can be accessed live:
+* **Live Web App**: [data-stagecoach.lovable.app](https://data-stagecoach.lovable.app)
+
+### 📊 Data Pipeline Infrastructure (Lakeflow Ops)
+The backend pipeline operates on a robust data engineering framework tracked via production monitors:
+* **Data Scale**: Successfully processes over **73.8M taxi records** with a sustained **91.9% pipeline run success rate**.
+* **Ingestion Strategy**: Leverages automated iteration loops (`ForEach`) tracking landing zone metadata to safely convert raw Parquet binaries straight into Delta staging structures with comprehensive schema drift mapping.
+* **Relational Warehousing**: Executes merging procedures to pass deduplicated staging rows into production tables dynamically.
