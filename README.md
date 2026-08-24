@@ -69,3 +69,18 @@ ORDER BY total_trips DESC;
 * **End-to-End Automation**: Zero manual intervention from initial landing file detection to final dashboard reporting adjustments.
 * **Fault-Tolerant Auditing**: Comprehensive observability tracking rows processed per run to instantly call out pipeline anomalies.
 * **Enterprise Security**: Managed natively inside Microsoft Fabric environment with centralized data compliance and governance standards.
+
+
+## 🖼️ Architecture & Pipeline Visuals
+
+### End-to-End Processing Architecture
+![End to End Processing Diagram](image_zcgKGn.png)
+
+### Data Pipeline Stage Layout
+![Pipeline Flow Layout Diagram](image_QiI5Tq.png)
+
+### Microsoft Fabric Control Loop (ProcessToPresentationPipeline)
+![Pipeline Orchestration Monitor Screenshot](image_jNt_vP.png)
+
+### Copy Activity Configuration
+![Copy Activity Source Path Settings](image_eaX64x.png)
